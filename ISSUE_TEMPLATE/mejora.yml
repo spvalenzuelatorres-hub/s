@@ -1,0 +1,17 @@
+name: "Sugerencia de mejora"
+description: "Propón una mejora (documentación, estilo, pruebas, etc.)"
+title: "[MEJORA] <resumen>"
+labels: ["enhancement"]
+body:
+  - type: input
+    id: motivo
+    attributes:
+      label: ¿Por qué?
+      placeholder: ¿Qué aporta esta mejora?
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta concreta
+      placeholder: Explica paso a paso los cambios sugeridos

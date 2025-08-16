@@ -1,0 +1,36 @@
+name: "Reporte de bug"
+description: "Describe un problema encontrado y cómo reproducirlo"
+title: "[BUG] <resumen>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tu reporte. Completa la información solicitada:
+  - type: input
+    id: actual
+    attributes:
+      label: ¿Qué ocurre?
+      placeholder: Describe el comportamiento actual
+    validations:
+      required: true
+  - type: input
+    id: esperado
+    attributes:
+      label: ¿Qué debería ocurrir?
+      placeholder: Describe el comportamiento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducir
+      value: |
+        1. Clonar repo
+        2. Ejecutar script
+        3. Ver error
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia (logs/capturas)
+      placeholder: Adjunta capturas o logs
