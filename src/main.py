@@ -2,7 +2,6 @@
 """
 Mini-proyecto con errores intencionales.
 Objetivo: el revisor debe encontrarlos y proponer fixes via PR.
-"""
 import pandas as pd
 
 # NOMBRE DE FUNCION CONFUSO: hace "promedio de ingresos" pero divide por numero de filas, no por ventas reales
